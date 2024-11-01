@@ -1,0 +1,1656 @@
+body{
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+/* --------------------Side Navigation-------------------- */
+.sidenav{
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: -280;
+    background-color: #3C3D37;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 39px;
+    z-index: 1;
+    scrollbar-gutter: stable;
+}
+
+.sidenav::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidenav::-webkit-scrollbar-track {
+    background: #3C3D37;
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.692);
+    border-radius: 10px;
+}
+
+.sidenav::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.bcplogo{
+    width: 34%;
+    height: 22.5%;
+    margin-top: -5.3%;
+    margin-left: 6.5%;
+}
+
+.notif-btn{
+    font-size: 20px;
+    margin-top: -53%;
+    margin-left: 71%;
+    color: rgba(255, 255, 255, 0.603); 
+    cursor: pointer;
+}
+
+.user-btn{
+    font-size: 20px;
+    margin-top: -8.5%;
+    margin-left: 85%;
+    color: rgba(255, 255, 255, 0.603);
+    cursor: pointer;
+}
+
+/* ----------Profile Popup Styles------------------- */
+.profile-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.profile-popup a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+}
+
+.profile-popup a i {
+    margin-right: 8px;
+}
+
+.profile-popup hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 8px 0;
+}
+
+.profile-popup a:hover {
+    background-color: #f1f1f1;
+}
+
+/*----------- END -----------*/
+
+.avatar{
+    width: 59%;
+    height: 38.5%;
+    margin-top: 10%;
+    margin-left: 20%;
+    border-radius: 50%;
+}
+
+.username{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 31.5%; */
+}
+
+.inline{
+    opacity: 30%;
+    margin-left: 4px;
+    margin-top: -15%;
+    border-top: -.5px;
+    border-bottom: 1px;
+}
+
+.admin-dashboard{
+    color: #ffffff;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dashboard-container{
+    background-color: #3C3D37;
+}
+
+.dashboard{
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dash-icon{
+    font-size: 20px;
+    margin-right: 8px;
+    color: rgb(255, 255, 255);
+}
+
+.board-name{
+    margin-top: 1%;
+    padding: 12px 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-indent: 10px;
+    margin-bottom: 8px;
+}
+
+.board-name:hover{
+    background-color: #ffffff25;
+    border-radius: 5px;
+}
+
+.drpdown-btn{
+    padding: 14px 0px;
+    text-indent: -27.5%;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;   
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background: none;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.drpdown-btn:hover{
+    background-color: #ffffff25;
+    border-radius: 5px;
+}
+
+.drp-name{
+    margin-right:25%;
+}
+
+.book-icon{
+    margin-left: 7px;
+    font-size: 20px;
+    margin-right: 9px;
+    color: rgb(255, 255, 255);
+}
+
+.drpdown-container{
+    display: none;
+    background-color: #3C3D37;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-bottom: -3%;
+}
+
+.drpdown-container .drplink{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;;
+    color: white;
+    margin-top: -5%;
+    margin-bottom: 8%;
+    margin-left: 18%;
+    padding: 13px;
+    text-decoration: none;
+}
+
+.drpdown-container .drplink:hover{
+    background-color: #ffffff25;
+    border-radius: 5px;
+}
+
+.transaction-icon{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 6px;
+    color: rgb(255, 255, 255);
+}
+
+.transaction-name{
+    margin-top: 1%;
+    padding: 12px 0px;
+    margin-left: -4%;
+    margin-right: 12%;
+    text-indent: 8px;
+    margin-bottom: 8px;
+}
+
+.drpdown-container .drplink-trans{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;;
+    color: white;
+    margin-top: -5%;
+    margin-bottom: 8%;
+    margin-left: 18%;
+    padding: 13px;
+    text-decoration: none;
+}
+
+.drpdown-container .drplink-trans:hover{
+    background-color: #ffffff25;
+    border-radius: 5px;
+}
+
+.drpdown-container .drplink-trans:last-child {
+    margin-bottom: 70px;
+}
+/* --------------------END-------------------- */
+
+#uppernav{
+    transition: margin-left 0.3s;
+    padding: 12px;  
+    margin-left: 280px;
+}
+
+.upnav{ 
+    border-bottom: 2px solid lightgray;
+}
+
+.openbtn{
+    font-size: 21px;
+    cursor: pointer;
+    background-color: #3C3D37;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 20px;
+    margin-bottom: 1.5%;
+    border-radius: 5px;
+}
+
+.dash-container{
+    gap: 10px;
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+    background-color: #ffff;
+}
+
+.book-status{
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+}
+
+.name{
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.available-value{
+    margin-left: 27px;
+    margin-top: -15px;
+}
+
+.borrowed-value{
+    margin-left: 27px;
+    margin-top: -15px;
+}
+
+.due-value{
+    margin-left: 27px;
+    margin-top: -15px;
+}
+
+
+.library-categories{
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+  
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 55px;
+}
+  
+.category-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.category-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #47bb4b;
+}
+  
+.description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+  
+.category-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgb(255, 255, 255);
+}
+
+
+/* --------------------ADD BOOK PAGE-------------------- */
+.book-container{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.addbook{
+    margin-left: 19.5%;
+    width: 60%;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.addname{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.title{
+    display: block;
+    width: 70%;
+    margin-left: 80px;
+    padding: 13px 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding-left: 16.5px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.categories{
+    display: block;
+    width: 73%;
+    margin-left: 80px;
+    padding: 13px 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.date{
+    width: 34.5%;
+    font-size: 13.5px;
+    padding: 10px 0;
+    margin-left: 12.5%;
+    padding-left: 3px;
+}
+
+.qty{
+    width: 34.5%;
+    font-size: 13.5px;
+    padding: 10px 0;
+    margin-left: 6px;
+    padding-left: 3px;
+}
+
+.removed{
+    font-size: 14px;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: light;
+    margin-left: 78%;
+    margin-top: 15px;
+}
+
+.sub-btn{
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 17.6%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #033683;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sub-btn:hover{
+    background-color: #032961;
+}
+
+.add-cancel{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add-cancel:hover{
+    background-color: rgb(201, 1, 1);
+}
+/* --------------------END-------------------- */
+
+
+/* --------------------LIST OF BOOKS-------------------- */
+.listbook-container{
+    margin-top: -30px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.list-name{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: -4.5%;
+}
+
+.tbl-container{
+    width: 100%;
+}
+
+.list-head{
+    background-color: #3C3D37;
+}
+
+.list-book{
+    width: 35%;
+    margin-bottom: -50px;
+    font-size: 17px;
+    padding: 10px 0px;
+    color: white;
+}
+
+.list-title{
+    width: 15%;
+    margin-bottom: -50px;
+    font-size: 17px;
+    padding: 10px 0px;
+    color: white;
+}
+
+.list-quantity{
+    width: 10%;
+    margin-bottom: -50px;
+    font-size: 17px;
+    padding: 10px 0px;
+    color: white;
+}
+
+.list-tbody{
+    background-color: #ffffff;
+    text-indent: 1.5%;
+    color: black;
+    font-size: 15px;
+    cursor: default;
+}
+
+.list-tiles{
+    text-indent: 10px;
+}
+
+.list-pad{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.view-btn{
+    width: 100%;
+    font-size: 17px;
+    background-color: #0D92F4;
+    color: white;
+    padding: 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.view-btn:hover{
+    background-color: #0b7dce;
+}
+
+.update-btn{
+    width: 100%;
+    font-size: 17px;
+    background-color: #399918;
+    color: white;
+    padding: 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.update-btn:hover{
+    background-color: #2c7913;
+}
+
+.delete-btn{
+    width: 100%;
+    font-size: 17px;
+    background: #FF0000;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background: #e20000;
+}
+
+.search-con{
+    width: 25%;
+    height: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin-left: 75%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.search-input{
+    width: 100%;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-btn{
+    padding: 6px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar::placeholder{
+    color: #cbd0d7;
+}
+
+.search-btn:hover{
+    background-color: #4D6EA0;
+}
+
+.update-error{
+    display:inline-block;
+    text-align: center;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    color: #ffff;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.update-success{
+    display:inline-block;
+    text-align: center;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    color: #ffff;
+    background-color: #399918;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* --------------------END-------------------- */
+
+
+/* --------------------borrow-book page-------------------- */
+.tab-container{
+    width: 100%;
+    margin-top: -30px;
+    background-color: #ffffff;
+}
+
+.tab-con{
+    background: none;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.tabcon-head{
+    font-size: 35px;
+    margin-bottom: -30px;
+    text-indent: 10%;
+}
+
+.addnew-borrow{
+    margin-left: 46%;
+    width: 15%;
+    padding: 8px 5px;
+    font-size: 15px;
+    background-color: #399918;
+    color: white;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.addnew-borrow:hover{
+    background-color: #2c7913;
+}
+
+.search-container{
+    width: 35%;
+    height: 5%;
+    margin-top: -34px;
+    margin-bottom: -35px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin-left: 65%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.search-bar{
+    width: 100%;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+  
+.search-button{
+    padding: 6px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.search-bar::placeholder{
+    color: #cbd0d7;
+}
+  
+.search-button:hover{
+    background-color: #4D6EA0;
+}
+
+.tab-head{
+    background-color: #3C3D37;
+}
+
+.tab-id{
+    color: white;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.tab-stdname{
+    color: white;
+    width: 45%;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.tab-borrow{
+    width: 19%;
+    color: white;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.borrower{
+    cursor: pointer;
+    text-indent: 5%;
+    color: black;
+    font-size: 15px;
+}
+
+.data{
+    text-align: center;
+}
+
+.borrower .data{
+    padding: 10px 6px;
+}
+
+.tab-action{
+    width: 17%;
+    color: white;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.view-btn-borrower{
+    width: 100%;
+    font-size: 17px;
+    background-color: #0D92F4;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-btn-borrower:hover{
+    background-color: #0b7dce;
+}
+
+.update-btn-borrower{
+    width: 100%;
+    font-size: 17px;
+    background-color: #399918;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.update-btn-borrower:hover{
+    background-color: #2c7913;
+}
+
+.return-btn-borrower{
+    width: 100%;
+    font-size: 17px;
+    background-color: #F3C623;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.return-btn-borrower:hover{
+    background-color: #cfa91d;
+}
+/* --------------------END-------------------- */
+
+
+
+
+
+/* --------------------View-list-book page-------------------- */
+.view-container{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.viewbook{
+    margin-left: 19.5%;
+    width: 60%;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.viewname{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.view-label{
+    display: block;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    margin-left: 85px;
+}
+
+.view-input{
+    display: block;
+    cursor: default;
+    width: 70%;
+    margin-left: 80px;
+    padding: 13px 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-left: 16.5px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.view-categories{
+    display: block;
+    cursor: default;
+    width: 70%;
+    margin-left: 80px;
+    padding: 13px 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-left: 16.5px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.view-shelf{
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    width: 22%;
+    font-size: 13.5px;
+    padding: 10.8px 0;
+    padding-left: 3px;
+    margin-left: 13%;
+    cursor: default;
+}
+
+.view-label-date{
+    display: flex;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    margin-left: 38.5%;
+    margin-top: -57px;
+    margin-bottom: 1px;
+}
+
+.view-date{
+    width: 22%;
+    cursor: default;
+    font-size: 13.5px;
+    padding: 10px 0;
+    margin-left: 37.3%;
+    padding-left: 3px;
+    margin-bottom: 30px;
+}
+
+.view-label-qty{
+    display: flex;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    margin-left: 62.7%;
+    margin-top: -86.5px;
+    margin-bottom: 1px;
+}
+
+.view-qty{
+    cursor: default;
+    width: 22%;
+    font-size: 13.5px;
+    padding: 10px 0;
+    margin-left: 61.9%;
+    padding-left: 3px;
+}
+
+.view-container .view-qty:last-child {
+    margin-bottom: 50px;
+}
+
+.view-container .viewbook:last-child {
+    margin-bottom: 20px;
+}
+/* --------------------END-------------------- */
+
+
+
+/* --------------------Update-list-books page-------------------- */
+.update-container{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.updatebook{
+    margin-left: 19.5%;
+    width: 60%;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.updatename{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.update-input{
+    display: block;
+    width: 70%;
+    margin-left: 80px;
+    padding: 13px 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding-left: 16.5px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.update-categories{
+    display: block;
+    width: 73%;
+    margin-left: 80px;
+    padding: 13px 0;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-left: 8.25px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.update-label-qty{
+    display: block;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    margin-left: 51%;
+    margin-bottom: 1px;
+}
+
+.update-qty{
+    width: 34.5%;
+    font-size: 13.5px;
+    padding: 10px 0;
+    margin-left: 50%;
+    padding-left: 3px;
+}
+
+.update-label-date{
+    display: flex;
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    margin-left: 85px;
+    margin-top: -57px;
+    margin-bottom: 1px;
+}
+
+.update-date{
+    width: 34.5%;
+    font-size: 13.5px;
+    padding: 10px 0;
+    margin-left: 12.8%;
+    padding-left: 3px;
+}
+
+.update-sub-btn{
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 17.6%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #033683;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.update-sub-btn:hover{
+    background-color: #032961;
+}
+
+.update-container .updatebook:last-child {
+    margin-bottom: 20px;
+}
+
+.update-cancel{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.update-cancel:hover{
+    background-color: rgb(201, 1, 1);
+}
+
+.update-removed{
+    font-size: 14px;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: light;
+    margin-left: 78%;
+    margin-top: 15px;
+}
+/* --------------------END-------------------- */
+
+
+/* --------------------Add-new-borrow page-------------------- */
+.addnew-container{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.addnew-con{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+
+.addnew-name{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.add{
+    margin-left: 65%;
+    width: 20%;
+    text-align: center;
+    background-color: #399918;
+    color: white;
+    padding: 8px 5px;
+    font-size: 15px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.add:hover{
+    background-color: #2c7913;
+}
+
+.x-icon{
+    width: 30px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-left: 88%;
+    padding: 3px;
+    background-color: red;
+    margin-top: -55px;
+    cursor: pointer;
+}
+
+.book-input-container {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.borrow-input{
+    display: block;
+    width: 70%;
+    margin-left: 70px;
+    padding: 13px 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding-left: 16.5px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.reset-borrow{
+    font-size: 14px;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: light;
+    margin-left: 78%;
+}
+
+.sub-borrow{
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 17.8%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #033683;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sub-borrow:hover{
+    background-color: #032961;
+}
+
+.add-borrow-cancel{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add-borrow-cancel:hover{
+    background-color: rgb(201, 1, 1);
+}
+/* --------------------END-------------------- */
+
+
+/* --------------------View-borrow-book page-------------------- */
+.viewborrow-container{
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: -15px;
+}
+
+.borrow-name{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: -15px;
+}
+
+.borrow-id{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.view-tbl-container{
+    width: 100%;
+}
+
+.borrow-head{
+    color: white;
+    background-color: #3C3D37;
+}
+
+.view-booktitle{
+    padding: 10px 0;
+    width: 40%;
+}
+
+.view-borrowdate{
+    width: 20%;
+}
+
+.view-duedate{
+    width: 20%;
+}
+
+.borrow-body{
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+}
+
+.view-title-data{
+    text-indent: 10px;
+    padding: 5px;
+}
+
+.view-borrowdate-data{
+    text-align: center;
+}
+
+.view-duedate-data{
+    text-align: center;
+}
+
+.view-returnbtn{
+    width: 100%;
+    font-size: 17px;
+    background-color: #F3C623;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+/* --------------------END-------------------- */
+
+
+/* --------------------Update-borow-page-------------------- */
+.update-borrow-container{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.update-con{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+
+.update-name{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.update-input-borrow{
+    display: block;
+    width: 70%;
+    margin-left: 70px;
+    padding: 13px 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding-left: 16.5px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+}
+
+.update-borrow-label{
+    font-weight: 600;
+    color: #495057;
+    font-size: 15px;
+    margin-left: 79px;
+}
+
+.reset{
+    font-size: 14px;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: light;
+    margin-left: 78%;
+}
+
+.update-borrow{
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 17.8%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #033683;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.update-borrow:hover{
+    background-color: #032961;
+}
+
+.update-borrow-cancel{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.update-borrow-cancel:hover{
+    background-color: rgb(201, 1, 1);
+}
+/* --------------------END-------------------- */
+
+
+/*----------- MY PROFILE ----------*/
+.profile-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.profile-popup a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+}
+
+.profile-popup a i {
+    margin-right: 8px;
+}
+
+.profile-popup hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 8px 0;
+}
+
+.profile-popup a:hover {
+    background-color: #f1f1f1;
+}
+/* --------------------END-------------------- */
+
+
+
+/* My Profile Section */
+.up_profile h1 {
+    font-size: 28px;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.up_profile {
+    background-color: #e9ecef;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up_profile label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 14px;
+}
+
+.up_profile input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.up_profile button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 28%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.up_profile button:hover {
+    background-color: #218838;
+}
+/* --------------------END-------------------- */
+
+
+
+/* Change Password Section */
+.ch_password {
+    background-color: #e9ecef;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ch_password h2 {
+    font-size: 28px;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ch_password label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 14px;
+}
+
+.ch_password button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 28%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.ch_password button:hover {
+    background-color: #218838;
+}
+
+.password-container {
+    position: relative;
+    width: 400px; /* Set a specific width */
+}
+
+.password-container input {
+    height: 47px;
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Left padding for the text and right for the icon */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.password-container .fa-eye,
+.password-container .fa-eye-slash {
+    position: absolute;
+    right: 10px; /* Space from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    cursor: pointer;
+    z-index: 1; /* Ensures the icon is above the input field */
+    color: #aaa; /* Icon color */
+}
+
+.password-container .fa-eye:hover {
+    color: #000000; /* Optional: Change color on hover */
+}
+
+.password-container .fa-eye-slash {
+    color: #000000; /* Change the color of the icon when the password is visible */
+}
+/* --------------------END-------------------- */
+
+
+/* Alert Message Styles */
+.alert {
+    display: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.alert.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert.danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+/* --------------------END-------------------- */
+
+
+/* Error and success messages */
+form .success-message {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+}
+
+form .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert.danger {
+    background-color: #f44336;
+    color: white;
+}
+/* --------------------END-------------------- */
+
+/* Transaction History page */
+.transaction-container{
+    width: 100%;
+    margin-top: -30px;
+    background-color: #ffffff;
+}
+
+.transaction{
+    background: none;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.transaction-title-history{
+    font-size: 35px;
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+.transaction-head{
+    background-color: #3C3D37;
+}
+
+.transaction-content{
+    color: white;
+    width: 12%;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.transactionname{
+    color: white;
+    width: 30%;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.transaction-title{
+    color: white;
+    width: 30%;
+    font-size: 16.5px;
+    padding: 10px 6px;
+}
+
+.data-history{
+    text-indent: 5%;
+    color: black;
+    font-size: 15px;
+    padding: 10px 6px;
+}
+
+.content-data{
+    text-align: center;
+    padding: 10px 6px;
+}
+/* --------------------END-------------------- */
+
